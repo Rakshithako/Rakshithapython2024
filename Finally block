@@ -1,0 +1,6 @@
+try:
+  file = open("/content/Rakshi.txt", "r")
+except fikenotfounderror:
+  print("file not found.")
+finally:
+  print("execution complete.")
