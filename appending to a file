@@ -1,0 +1,3 @@
+file = open("/content/Rakshi.txt","a")
+file.write("this is an append line.\n")
+file.close()
