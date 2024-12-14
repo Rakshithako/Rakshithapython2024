@@ -1,0 +1,10 @@
+def write_numbers_to_file(file_path, number_list):
+    try:
+        # Open the file in write mode ('w')
+        with open(file_path, 'w') as file:
+            # Write each number from the list to the file, each on a new line
+            for number in number_list:
+                file.write(f"{number}\n")  # Add a newline after each number
+        print(f"Numbers successfully written to {file_path}")
+    except Exception as e:
+        print(f"An error occurred: {e}")
