@@ -1,0 +1,8 @@
+def count_words(file_path):
+    with open(file_path, 'r') as file:
+        # Read the content of the file
+        content = file.read()
+        
+        # Split the content into words and count them
+        words = content.split()  # Split by any whitespace
+        return len(words)
