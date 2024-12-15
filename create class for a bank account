@@ -1,0 +1,18 @@
+class BankAccount:
+  def __init__(self,account_number,balance=0): # Changed _init_ to __init__
+    self.account_number = account_number
+    self.balance = balance
+
+  def deposite(self,amount):
+    self.balance += amount
+    print(f"Deposited {amount}. New balance: {self.balance}")
+
+  def withdraw(self,amount):
+    if amount <= self.balance:
+      self.balance -= amount
+      print(f" Withdrew {amount}. New balance: {self.balance}")
+    else:
+      print("Insufficient balance")
+account = BankAccount("12345")
+account.deposite(1000)
+account.withdraw(500) # Changed Withdraw to withdraw to match the method definition
