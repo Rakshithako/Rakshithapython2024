@@ -1,0 +1,18 @@
+class parentclass:
+  def __init__(self, name): # Changed _init_ to __init__
+    self.name = name
+
+  def name1(self):
+    print(f"Hello, my name is {self.name}")
+
+class childclass(parentclass):
+  def __init__(self, name, age):
+    super().__init__(name)
+    self.age=age
+
+  def age1(self):
+    print(f"I am {self.age} years old")
+
+child=childclass("Alice",18)
+child.name1()
+child.age1()
